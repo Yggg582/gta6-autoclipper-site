@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA6 Autoclipper</title>
+<meta name="description" content="GTA6 Autoclipper — an internal tool that publishes short highlight clips of GTA VI Twitch streams to our own YouTube channel.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <a class="home" href="./">GTA6 Autoclipper</a>
+  <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+</header>
+
+<h1>GTA6 Autoclipper</h1>
+<p>GTA6 Autoclipper is a small internal tool run by one independent creator. It finds the best moments of
+English-language GTA VI streams on Twitch, turns them into short vertical clips with subtitles, and — after a person
+reviews and approves each clip — publishes them as YouTube Shorts on our own YouTube channel.</p>
+
+<div class="yt">This app uses <strong>YouTube API Services</strong> (YouTube Data API v3).</div>
+
+<h2>How it works</h2>
+<ul>
+  <li>Only streamers on our manually curated allow-list are clipped: streamers who gave permission, run an official
+    clip program, or have not asked others not to clip them. Every video credits the streamer and links to their
+    Twitch channel, and any streamer can ask to be removed.</li>
+  <li>Each clip is reviewed by a person before it is published. Clips with copyrighted music are not published
+    automatically.</li>
+  <li>The tool uploads videos only to the channel of its operator, who signs in once with their Google Account
+    (OAuth 2.0). It uses <code>videos.insert</code> to upload and <code>videos.delete</code> to remove a video, for
+    example when a streamer asks us to take a clip down.</li>
+  <li>The tool is not a public service: there are no user accounts and no other people's YouTube data is
+    accessed.</li>
+</ul>
+
+<h2>Takedown requests</h2>
+<p>If you are a streamer and want a clip removed, write to
+<a href="mailto:roxywild228@gmail.com">roxywild228@gmail.com</a> — we remove it the same day.</p>
+
+<h2>Policies</h2>
+<ul>
+  <li><a href="privacy.html">GTA6 Autoclipper Privacy Policy</a></li>
+  <li><a href="terms.html">GTA6 Autoclipper Terms of Service</a></li>
+  <li><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></li>
+  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+</ul>
+
+<footer>Contact: <a href="mailto:roxywild228@gmail.com">roxywild228@gmail.com</a> ·
+  <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></footer>
+</main>
+</body>
+</html>
