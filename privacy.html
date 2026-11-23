@@ -3,79 +3,133 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — GTA6 Autoclipper</title>
+<title>Privacy Policy — SixStar Replays</title>
+<meta name="description" content="Privacy Policy of SixStar Replays and GTA6 Autoclipper.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
 <header>
-  <a class="home" href="./">GTA6 Autoclipper</a>
-  <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+  <a class="home" href="./">SixStar <span>Replays</span></a>
+  <nav><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a href="streamers.html">For streamers</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
 </header>
-
 <h1>Privacy Policy</h1>
-<p>Effective date: 19 November 2026</p>
+<p>Effective date: 23 November 2026</p>
 
-<p>This Privacy Policy explains how GTA6 Autoclipper (“the app”, “we”) handles information. The app is an internal
-tool operated by one independent creator to publish short clips to the operator's own YouTube channel.</p>
+<p>This Privacy Policy explains what personal data SixStar Replays and its publishing tool GTA6 Autoclipper
+(together “we”, “us”, “the service”) collect, why, how long we keep it and what rights you have. It applies to this
+website, to the GTA6 Autoclipper application and to the videos we publish on TikTok and YouTube.</p>
 
-<h2>YouTube API Services</h2>
-<p>The app uses YouTube API Services. By using the app you agree to be bound by the
-<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of your information is
-described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<h2>1. Who is responsible</h2>
+<p>The data controller is the independent creator who operates SixStar Replays, based in France. Contact for all
+privacy matters: <a href="mailto:roxywild228@gmail.com">roxywild228@gmail.com</a>.</p>
 
-<h2>Who signs in</h2>
-<p>Only the operator of the app signs in with their Google Account, once, to authorize uploads to their own channel.
-The app has no public users and no user accounts.</p>
-
-<h2>What information the app accesses</h2>
+<h2>2. Whose data this policy covers</h2>
 <ul>
-  <li>An OAuth 2.0 access token and refresh token for the operator's YouTube channel, with permission to upload
-    videos and manage the videos the app uploaded.</li>
-  <li>The ID and link of each video the app uploads, returned by the YouTube Data API.</li>
-</ul>
-<p>The app does not read comments, subscribers, watch history, analytics or any other YouTube data, and does not
-access data of other YouTube users.</p>
-
-<h2>How the information is used</h2>
-<ul>
-  <li>The token is used only to upload approved clips (<code>videos.insert</code>) and to delete a clip
-    (<code>videos.delete</code>), for example on a takedown request.</li>
-  <li>Video IDs and links are kept so the operator can see what was published and remove a clip on request.</li>
+  <li><strong>The account owner</strong> — the person who connects the SixStar Replays TikTok and YouTube accounts to
+    GTA6 Autoclipper. GTA6 Autoclipper has no other users and no public sign-up.</li>
+  <li><strong>Streamers</strong> whose public Twitch broadcasts we clip.</li>
+  <li><strong>Twitch chat participants</strong> whose public chat messages are read to find highlight moments.</li>
+  <li><strong>People who contact us</strong> by email.</li>
+  <li><strong>Visitors of this website.</strong></li>
 </ul>
 
-<h2>Storage and sharing</h2>
+<h2>3. What we collect and why</h2>
+<div class="table-wrap"><table>
+  <tr><th>Data</th><th>Source</th><th>Purpose</th><th>Kept for</th></tr>
+  <tr><td>TikTok basic profile of the SixStar Replays account (open ID, display name, avatar) via
+    <code>user.info.basic</code></td><td>TikTok Login Kit, when the account owner signs in</td>
+    <td>Confirm the correct account is connected</td><td>While the account is connected</td></tr>
+  <tr><td>TikTok access and refresh tokens</td><td>TikTok OAuth</td><td>Upload approved videos to the SixStar Replays
+    account (<code>video.upload</code>, <code>video.publish</code>)</td><td>While connected; deleted on disconnect
+    (see section 6)</td></tr>
+  <tr><td>TikTok creator info (privacy options, max video length) and publish IDs / status</td><td>TikTok Content
+    Posting API</td><td>Post in line with TikTok's requirements and check that an upload succeeded</td>
+    <td>Publish IDs: while the video is online</td></tr>
+  <tr><td>YouTube access and refresh tokens; IDs and links of videos we uploaded</td><td>Google OAuth, YouTube Data
+    API</td><td>Upload approved videos and delete them on takedown requests</td><td>While connected / while the video
+    is online</td></tr>
+  <tr><td>Public Twitch broadcast video and audio of allow-listed streamers; channel name and display name</td>
+    <td>Public Twitch streams and Twitch API</td><td>Make highlight clips and credit the streamer</td><td>Raw footage
+    and work files: deleted automatically after a few days; published clips: until removed</td></tr>
+  <tr><td>Public Twitch chat messages (username, text, time)</td><td>Public Twitch chat</td><td>Detect moments that
+    viewers reacted to</td><td>Deleted automatically after 3 days; a few sample lines may stay with a clip record
+    while the clip is in our system</td></tr>
+  <tr><td>Your email address and message</td><td>You, when you write to us</td><td>Answer you, handle takedowns and
+    privacy requests</td><td>Up to 12 months after the matter is closed</td></tr>
+  <tr><td>Technical request data (IP address, browser)</td><td>Our website host (GitHub Pages)</td><td>Deliver and
+    secure the website — processed by GitHub, not by us</td><td>See
+    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub
+    Privacy Statement</a></td></tr>
+</table></div>
+<p>We do <strong>not</strong> collect data from TikTok or YouTube users who watch our videos, and we do not access
+followers, comments, direct messages, watch history or analytics of any other account. We do not use cookies,
+trackers or analytics on this website.</p>
+
+<h2>4. Legal bases (GDPR)</h2>
 <ul>
-  <li>The token and video IDs are stored only on the operator's own computer, in a local file and a local database.
-    They are not uploaded to any server of ours.</li>
-  <li>We do not sell, rent or share this information with third parties, and we do not use it for advertising.</li>
-  <li>The app does not use cookies or similar tracking technologies, and this website does not collect any
-    personal information.</li>
+  <li><strong>Legitimate interests</strong> (Art. 6(1)(f)) — making and crediting highlight clips of public broadcasts,
+    finding moments in public chat, securing our service, answering messages.</li>
+  <li><strong>Consent</strong> (Art. 6(1)(a)) — the account owner authorizes TikTok and Google access through OAuth
+    and can withdraw it at any time.</li>
+  <li><strong>Legal obligation</strong> (Art. 6(1)(c)) — handling copyright notices and legal requests.</li>
 </ul>
 
-<h2>Retention and deletion</h2>
+<h2>5. Sharing</h2>
 <ul>
-  <li>The token is kept while the app is in use. Deleting the local token file removes it immediately.</li>
-  <li>You can revoke the app's access at any time on the
-    <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>. After
-    access is revoked, or if the app's access is no longer needed, we delete the stored token and any data obtained
-    from YouTube API Services within 7 days.</li>
-  <li>To ask us to delete any data, write to the contact address below.</li>
+  <li>Videos and captions are sent to <strong>TikTok</strong> and <strong>YouTube (Google)</strong> to be published.
+    Their handling of data is governed by the <a href="https://www.tiktok.com/legal/page/eea/privacy-policy/en">TikTok
+    Privacy Policy</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+  <li>We do not sell, rent or trade personal data, do not share it for advertising and do not use it to train
+    third-party AI models.</li>
+  <li>We may disclose data if required by law or to respond to a valid legal request.</li>
 </ul>
 
-<h2>Streamers</h2>
-<p>Clips come from public Twitch broadcasts of streamers on our allow-list. If you are a streamer and want a clip
-removed, contact us and we will remove it the same day.</p>
+<h2>6. Storage, security and retention</h2>
+<ul>
+  <li>Tokens, video IDs and work files are stored only on the operator's own computer, in local files and a local
+    database protected by the operating system account. They are never published or sent to our own servers (we have
+    none).</li>
+  <li>Tokens are never written to logs. Access is limited to the operator.</li>
+  <li>Raw stream footage, rejected clips and chat logs are deleted automatically after a few days.</li>
+  <li>When the TikTok or YouTube account is disconnected, or access is revoked, we delete the stored tokens and the
+    data obtained from that platform's API within 7 days.</li>
+</ul>
 
-<h2>Changes</h2>
-<p>We will update the effective date above whenever this policy changes.</p>
+<h2>7. Revoking access</h2>
+<ul>
+  <li>TikTok: in the TikTok app, go to <em>Settings and privacy → Security → Apps and services permissions</em> and
+    remove GTA6 Autoclipper.</li>
+  <li>YouTube / Google: <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</li>
+</ul>
 
-<h2>Contact</h2>
+<h2>8. Your rights</h2>
+<p>Under the GDPR you can ask for access to your data, correction, deletion, restriction, objection to processing
+and data portability, and withdraw consent at any time. Streamers and chat participants can ask us to delete clips or
+messages concerning them. Write to <a href="mailto:roxywild228@gmail.com">roxywild228@gmail.com</a>; we answer within 30 days. You may also complain to the French data
+protection authority, the <a href="https://www.cnil.fr/">CNIL</a>, or to the authority in your country.</p>
+
+<h2>9. International transfers</h2>
+<p>Our own processing happens in France. TikTok and Google may process data outside the European Economic Area under
+their own safeguards, described in their privacy policies.</p>
+
+<h2>10. Children</h2>
+<p>Our service is not directed to children under 13 (or under 16 where local law requires), and we do not knowingly
+collect their data. If you believe a child's data reached us, contact us and we will delete it.</p>
+
+<h2>11. Changes</h2>
+<p>We will post any change on this page and update the effective date. Significant changes will be announced on the
+home page.</p>
+
+<h2>12. Contact</h2>
 <p><a href="mailto:roxywild228@gmail.com">roxywild228@gmail.com</a></p>
-
-<footer><a href="./">Home</a> · <a href="terms.html">Terms of Service</a> ·
-  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> ·
-  <a href="https://policies.google.com/privacy">Google Privacy Policy</a></footer>
+<footer>
+  <p>SixStar Replays is an independent fan project. It is not affiliated with, endorsed or sponsored by Rockstar Games,
+  Take-Two Interactive, Twitch, TikTok, YouTube or Google. Grand Theft Auto and GTA are trademarks of Take-Two
+  Interactive Software. All stream footage belongs to the streamers who created it.</p>
+  <nav><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a href="streamers.html">For streamers</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+  <p>Contact: <a href="mailto:roxywild228@gmail.com">roxywild228@gmail.com</a></p>
+</footer>
 </main>
 </body>
 </html>

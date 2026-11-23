@@ -3,52 +3,74 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GTA6 Autoclipper</title>
-<meta name="description" content="GTA6 Autoclipper — an internal tool that publishes short highlight clips of GTA VI Twitch streams to our own YouTube channel.">
+<title>SixStar Replays — GTA VI stream highlights</title>
+<meta name="description" content="Short highlights of English-language GTA VI Twitch streams on TikTok and YouTube Shorts, always crediting the streamer.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
 <header>
-  <a class="home" href="./">GTA6 Autoclipper</a>
-  <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+  <a class="home" href="./">SixStar <span>Replays</span></a>
+  <nav><a href="index.html" aria-current="page">Home</a><a href="how-it-works.html">How it works</a><a href="streamers.html">For streamers</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
 </header>
+<h1>The best moments of GTA VI streams, in under a minute</h1>
+<p class="lead">SixStar Replays publishes short vertical highlights of English-language Grand Theft Auto VI streams
+on Twitch — the chases, crashes, fails and reactions that made chat explode — and always sends viewers back to the
+streamer who made the moment.</p>
+<div class="cta">
+  <a class="btn primary" href="https://www.tiktok.com/@sixstar_replays">Watch on TikTok</a>
+  <a class="btn" href="https://www.youtube.com/@sixstar_replays">Watch on YouTube Shorts</a>
+  <a class="btn" href="streamers.html">I'm a streamer</a>
+</div>
 
-<h1>GTA6 Autoclipper</h1>
-<p>GTA6 Autoclipper is a small internal tool run by one independent creator. It finds the best moments of
-English-language GTA VI streams on Twitch, turns them into short vertical clips with subtitles, and — after a person
-reviews and approves each clip — publishes them as YouTube Shorts on our own YouTube channel.</p>
+<h2>What we publish</h2>
+<div class="cards">
+  <div class="card"><h3>Highlights about a minute long</h3><p>One moment per video, cut so the build-up and the
+    streamer's reaction both fit, with burned-in English subtitles.</p></div>
+  <div class="card"><h3>Credit in every video</h3><p>Every caption names the streamer and links to their Twitch
+    channel. The clip exists to send viewers to them.</p></div>
+  <div class="card"><h3>Reviewed by a person</h3><p>No clip goes out automatically: a person watches it, checks the
+    title and approves it before it is scheduled.</p></div>
+  <div class="card"><h3>Streamers in control</h3><p>We only clip streamers on our allow-list, and any streamer can
+    ask us to stop or to remove a clip — we act the same day.</p></div>
+</div>
 
-<div class="yt">This app uses <strong>YouTube API Services</strong> (YouTube Data API v3).</div>
-
-<h2>How it works</h2>
+<h2>Where to watch</h2>
 <ul>
-  <li>Only streamers on our manually curated allow-list are clipped: streamers who gave permission, run an official
-    clip program, or have not asked others not to clip them. Every video credits the streamer and links to their
-    Twitch channel, and any streamer can ask to be removed.</li>
-  <li>Each clip is reviewed by a person before it is published. Clips with copyrighted music are not published
-    automatically.</li>
-  <li>The tool uploads videos only to the channel of its operator, who signs in once with their Google Account
-    (OAuth 2.0). It uses <code>videos.insert</code> to upload and <code>videos.delete</code> to remove a video, for
-    example when a streamer asks us to take a clip down.</li>
-  <li>The tool is not a public service: there are no user accounts and no other people's YouTube data is
-    accessed.</li>
+  <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/@sixstar_replays">@sixstar_replays</a></li>
+  <li><strong>YouTube Shorts:</strong> <a href="https://www.youtube.com/@sixstar_replays">@sixstar_replays</a></li>
 </ul>
 
-<h2>Takedown requests</h2>
-<p>If you are a streamer and want a clip removed, write to
-<a href="mailto:roxywild228@gmail.com">roxywild228@gmail.com</a> — we remove it the same day.</p>
-
-<h2>Policies</h2>
+<h2>The tool behind it: GTA6 Autoclipper</h2>
+<p>The videos are prepared with <strong>GTA6 Autoclipper</strong>, our own software. It watches the public chat of
+allow-listed GTA VI streams to find the moments viewers reacted to, cuts a vertical clip with subtitles, and puts it
+in a review queue. After a person approves a clip, the tool uploads it to <em>our own</em> accounts through the
+official platform APIs:</p>
 <ul>
-  <li><a href="privacy.html">GTA6 Autoclipper Privacy Policy</a></li>
-  <li><a href="terms.html">GTA6 Autoclipper Terms of Service</a></li>
-  <li><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></li>
-  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li><strong>TikTok</strong> — TikTok Login Kit and the Content Posting API: the video is sent to the SixStar
+    Replays TikTok account (as a draft in the TikTok inbox, or posted directly once our app is approved for it).</li>
+  <li><strong>YouTube</strong> — YouTube Data API v3 (YouTube API Services): the video is uploaded to the SixStar
+    Replays YouTube channel.</li>
 </ul>
+<p>The tool only connects the accounts of SixStar Replays. It does not offer sign-up to the public and does not read
+or post to anybody else's TikTok or YouTube account. Details: <a href="how-it-works.html">How it works</a>,
+<a href="privacy.html">Privacy Policy</a>, <a href="terms.html">Terms of Service</a>.</p>
 
-<footer>Contact: <a href="mailto:roxywild228@gmail.com">roxywild228@gmail.com</a> ·
-  <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></footer>
+<h2>Our rules</h2>
+<ul>
+  <li>Only streamers on our manually curated allow-list are clipped.</li>
+  <li>Every video credits the streamer by name and links to their Twitch channel.</li>
+  <li>Clips with music are never posted to TikTok, and are posted elsewhere only after a person confirms it.</li>
+  <li>We respect daily posting limits and do not spam.</li>
+  <li>Takedown requests are handled the same day: <a href="mailto:roxywild228@gmail.com">roxywild228@gmail.com</a>.</li>
+</ul>
+<footer>
+  <p>SixStar Replays is an independent fan project. It is not affiliated with, endorsed or sponsored by Rockstar Games,
+  Take-Two Interactive, Twitch, TikTok, YouTube or Google. Grand Theft Auto and GTA are trademarks of Take-Two
+  Interactive Software. All stream footage belongs to the streamers who created it.</p>
+  <nav><a href="index.html" aria-current="page">Home</a><a href="how-it-works.html">How it works</a><a href="streamers.html">For streamers</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+  <p>Contact: <a href="mailto:roxywild228@gmail.com">roxywild228@gmail.com</a></p>
+</footer>
 </main>
 </body>
 </html>
