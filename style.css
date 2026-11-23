@@ -31,3 +31,9 @@ dt { font-weight: 600; margin-top: 14px; }
 dd { margin: 2px 0 0; }
 footer { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 12px; color: var(--muted); font-size: 14px; }
 footer nav { margin-top: 0; font-size: 14px; }
+header a.home { display: inline-flex; align-items: center; gap: 8px; }
+header a.home img { border-radius: 7px; }
+.clips { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 12px; margin: 12px 0; }
+.clips figure { margin: 0; }
+.clips iframe { width: 100%; aspect-ratio: 9 / 16; border: 0; border-radius: 10px; background: var(--panel); }
+.clips figcaption { font-size: 14px; color: var(--muted); margin-top: 4px; }
